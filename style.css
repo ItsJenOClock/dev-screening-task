@@ -1,0 +1,163 @@
+/* Applies at root element */
+:root {
+    font-family: 'Jost', sans-serif;
+    background-image: linear-gradient(to top, #CBD7D0, #F8F8F8);
+    cursor: default;
+    color: var(--black);
+    line-height: 0;
+    /* Custom properties that will be reused */
+    --rust: #B95319;
+    --green: #96AD90;
+    --black: #232C27;
+    --charcoal-blue: #2F4858; /* Included in style guide, though not used */
+}
+
+/* Applies to entire body */
+body {
+    margin: 32px;
+}
+
+/* Applies to ID card element */
+.id-card {
+    width: 950px;
+    max-width: 100%;
+    height: auto;
+    margin: 67px auto;
+    padding: 48px;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    background-color: rgba(255,243,236,.75); /* #FFF3EC at 75% */
+    box-sizing: border-box;
+}
+
+/* Applies to header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: var(--rust);
+}
+
+/* Applies to elements that need to have a pointer cursor */
+.menu .fas.fa-bars, .header .edit-icon, .header .save-icon {
+    cursor: pointer;
+}
+
+/* Applies to ID card when users enter edit mode */
+.id-card.edit-mode {
+    border: 4px dashed var(--rust);
+    background-color: transparent;
+}
+
+/* Applies to column layout */
+.column {
+    display: flex;
+}
+
+/* Applies to left column width */
+.column .left {
+    width: 40%;
+}
+
+/* Applies to right column width */
+.column .right {
+    width: 60%;
+}
+
+/* Applies to the elements of labels and corresponding details */
+.label-details {
+    text-align: left;
+    display: flex;
+}
+
+/* Applies to the elements of labels */
+.label-details h2 {
+    width: 40%;
+}
+
+/* Applies to the elements of details to labels */
+.label-details .body1 {
+    width: 50%;
+    word-break: break-word;
+}
+
+/* Applies to h1 elements */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0;
+    color: var(--rust);
+}
+
+/* Updates color of h2 elements to black */
+h1.black {
+    color: var(--black);
+}
+
+/* Applies to h2 elements */
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+/* Updates color of h2 elements to rust */
+h2.rust {
+    color: var(--rust);
+}
+
+/* Applies to body1 elements */
+.body1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+
+/* Applies to body2 elements */
+.body2 {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+/* Applies to files container */
+.uploaded-files {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Applies to file elements */
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 92px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 16px;
+    background-color: #fdfdfb; /* Style guide states #497D7E */
+    border: 0.25px solid var(--black);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Applies to file-img elements, the associated assets with the file type */
+.file-img {
+    width: 51px;
+    height: 56px;
+    object-fit: contain;
+}
