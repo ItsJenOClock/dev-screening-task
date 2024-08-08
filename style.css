@@ -4,7 +4,6 @@
     background-image: linear-gradient(to top, #CBD7D0, #F8F8F8);
     cursor: default;
     color: var(--black);
-    line-height: 0;
     /* Custom properties that will be reused */
     --rust: #B95319;
     --green: #96AD90;
@@ -35,8 +34,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 28px;
     font-weight: 600;
+    font-size: 28px;
     line-height: 34px;
     color: var(--rust);
 }
@@ -86,8 +85,8 @@ body {
 
 /* Applies to h1 elements */
 h1 {
-    font-size: 28px;
     font-weight: 600;
+    font-size: 28px;
     line-height: 34px;
     letter-spacing: 0;
     color: var(--rust);
@@ -113,16 +112,16 @@ h2.rust {
 
 /* Applies to body1 elements */
 .body1 {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.5px;
 }
 
 /* Applies to body2 elements */
 .body2 {
-    font-size: 10px;
     font-weight: 500;
+    font-size: 10px;
     line-height: 16px;
     letter-spacing: 0.5px;
     width: 100%;
@@ -160,4 +159,11 @@ h2.rust {
     width: 51px;
     height: 56px;
     object-fit: contain;
+}
+
+/* Update style based on common breakpoint of tablet screen size */
+@media only screen and (max-width: 768px) {
+    .label-details {
+        flex-direction: column;
+    }
 }
