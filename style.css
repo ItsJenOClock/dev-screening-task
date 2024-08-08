@@ -165,7 +165,13 @@ h1 {
 
 /* Update style based on common breakpoint of tablet screen size */
 @media only screen and (max-width: 768px) {
-    .label-details {
+    .column .left, .column .right {
+        width: 100%;
+    }
+    .label-details, .column {
         flex-direction: column;
+    }
+    .label-details h2, .label-details .body1 {
+        width: 100%;
     }
 }
