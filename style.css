@@ -27,6 +27,7 @@ body {
     border-radius: 8px;
     background-color: rgba(255,243,236,.75); /* #FFF3EC at 75% */
     box-sizing: border-box;
+    transition: all .3s ease-in; /* Property change transition */
 }
 
 /* Applies to header */
