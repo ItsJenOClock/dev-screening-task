@@ -41,7 +41,7 @@ body {
 }
 
 /* Applies to elements that need to have a pointer cursor */
-.menu .fas.fa-bars, .header .edit-icon, .header .save-icon {
+.menu .fas.fa-bars, .header .edit-icon, .header .save-icon, .file {
     cursor: pointer;
 }
 
@@ -66,10 +66,13 @@ body {
     width: 60%;
 }
 
-/* Applies to the elements of labels and corresponding details */
-.label-details {
-    text-align: left;
-    display: flex;
+/* Applies to h1 elements */
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0;
+    color: var(--rust);
 }
 
 /* Updates color of h2 elements to black */
@@ -108,24 +111,31 @@ h2.rust {
     width: 100%;
 }
 
+/* Applies to the elements of labels and corresponding details */
+.label-details {
+    text-align: left;
+    display: flex;
+}
+
 /* Applies to the elements of labels */
 .label-details h2 {
     width: 40%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding: 0;
 }
 
 /* Applies to the elements of details to labels */
 .label-details .body1 {
     width: 50%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding: 0;
     word-break: break-word;
-}
-
-/* Applies to h1 elements */
-h1 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 0;
-    color: var(--rust);
 }
 
 /* Applies to files container */
@@ -138,7 +148,6 @@ h1 {
 
 /* Applies to file elements */
 .file {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,13 +174,10 @@ h1 {
 
 /* Update style based on common breakpoint of tablet screen size */
 @media only screen and (max-width: 768px) {
-    .column .left, .column .right {
+    .column .left, .column .right, .label-details h2, .label-details .body1 {
         width: 100%;
     }
     .label-details, .column {
         flex-direction: column;
-    }
-    .label-details h2, .label-details .body1 {
-        width: 100%;
     }
 }
