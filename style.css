@@ -72,26 +72,6 @@ body {
     display: flex;
 }
 
-/* Applies to the elements of labels */
-.label-details h2 {
-    width: 40%;
-}
-
-/* Applies to the elements of details to labels */
-.label-details .body1 {
-    width: 50%;
-    word-break: break-word;
-}
-
-/* Applies to h1 elements */
-h1 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 0;
-    color: var(--rust);
-}
-
 /* Updates color of h2 elements to black */
 h1.black {
     color: var(--black);
@@ -102,11 +82,12 @@ h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    letter-spacing: 0;
+    letter-spacing: 1.5px; /* Matches design */
 }
 
-/* Updates color of h2 elements to rust */
+/* Updates color of h2 elements to rust maintains letter spacing of style guide */
 h2.rust {
+    letter-spacing: 0; /* Matches style guide */
     color: var(--rust);
 }
 
@@ -125,6 +106,26 @@ h2.rust {
     line-height: 16px;
     letter-spacing: 0.5px;
     width: 100%;
+}
+
+/* Applies to the elements of labels */
+.label-details h2 {
+    width: 40%;
+}
+
+/* Applies to the elements of details to labels */
+.label-details .body1 {
+    width: 50%;
+    word-break: break-word;
+}
+
+/* Applies to h1 elements */
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0;
+    color: var(--rust);
 }
 
 /* Applies to files container */
